@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
+	<Type Name="Array1&lt;*&gt;">
+		<DisplayString Condition="n == 0">Empty</DisplayString>
+		<DisplayString Condition="n > 0">{n}</DisplayString>
+		<Expand>
+			<ArrayItems>
+				<Size>n</Size>
+				<ValuePointer>p</ValuePointer>
+			</ArrayItems>
+		</Expand>
+	</Type>
+
+	<Type Name="Array2&lt;*&gt;">
+		<DisplayString Condition="n == 0">Empty</DisplayString>
+		<DisplayString Condition="n > 0">{n}</DisplayString>
+		<Expand>
+			<ArrayItems Condition="true">
+				<Size>n</Size>
+				<ValuePointer>p</ValuePointer>
+			</ArrayItems>
+		</Expand>
+	</Type>
+</AutoVisualizer>
