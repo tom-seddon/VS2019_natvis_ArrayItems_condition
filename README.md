@@ -14,7 +14,8 @@ Repro steps:
    
 2. Build either `Debug`/`Win32` or `Debug`/`x64`
 
-3. Put a breakpoint on the `printf` in `main.cpp`
+3. Put a breakpoint on the `printf` in the `main` function in
+   `VS2019_natvis_ArrayItems_condition.cpp`
 
 4. Use `Debug` > `Start Debugging` to start debugging
 
